@@ -90,8 +90,15 @@ small {
 
 .container {
     max-width: 1200px;
-    margin: 2px auto;
+    margin: 0;
     padding: 0;
+}
+
+/* Remove centralização de todos os containers */
+.container {
+    margin: 0;
+    max-width: none;
+    padding-left: var(--space-md);
 }
 
 /* ===== HEADER ===== */
@@ -104,7 +111,7 @@ small {
 
 .header-content {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: var(--space-xl);
 }
@@ -196,7 +203,7 @@ small {
 }
 
 .btn-outline:hover {
-    background-color: var(--color-text-light);
+    background-color: var(--color-primary);
     color: var(--color-background);
 }
 
@@ -289,7 +296,7 @@ main {
 
 .hero-image {
     background-color: var(--color-border-light);
-    height: 300px;
+    height: 200px;
     border-radius: 8px;
 }
 
@@ -317,9 +324,9 @@ main {
     background-color: var(--color-background);
     border: 1px solid var(--color-border-light);
     border-radius: 8px;
-    padding: var(--space-xl);
+    padding: var(--space-lg);
     text-align: center;
-    min-height: 150px;
+    min-height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -327,7 +334,7 @@ main {
 
 .category-image {
     background-color: var(--color-border-light);
-    height: 80px;
+    height: 60px;
     border-radius: 6px;
     margin-bottom: var(--space-md);
 }
